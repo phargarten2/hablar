@@ -466,8 +466,8 @@ as_reliable_dte <- function(.x, origin = "1970-01-01", ...) {
     stop("Logical vectors can't be converted to date.")}
   if(is.factor(.x)) {
     .x <- as.character(.x)}
-  if(any(class(.x) == "POSIXct")) {
-    .x <- strftime(.x)}
+##  if(any(class(.x) == "POSIXct")) {
+##    .x <- strftime(.x)}
   if(TRUE) {
     return(as.Date(.x, origin = origin, ...))}
 }
